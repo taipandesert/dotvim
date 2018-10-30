@@ -63,6 +63,8 @@ Upgrading all bundled plugins
 
 git submodule foreach git pull origin master
 
+
+
 Current Plugins
 ==================================================
 https://github.com/wlangstroth/vim-racket.git
@@ -75,3 +77,31 @@ https://github.com/scrooloose/syntastic
 https://github.com/klen/python-mode
 https://github.com/honza/vim-snippets
 https://github.com/flazz/vim-colorschemes
+
+
+Issues
+==========
+When adding a submodule of an existing local plugin
+'repo' already exists in the index
+git ls-files --stage
+git rm -r --cached FolderName
+cat .gitmodules => check/list submodules
+
+Git submodule Cheat Sheet
+==============================
+
+$ git submodule status
+$ git submodule add git://github.com/tpope/vim-sensible.git bundle/vim-sensible
+$ git submodule update
+
+$ git submodule update --remote --merge
+$ git commit -m "Update submodules"
+
+Update a specific submodule to the latest version (explicit method):
+  cd bundle/vim-sensible
+  git pull origin master
+  cd ../..
+  git add bundle/vim-sensible
+  git commit -m "update vim-sensible"
+
+
