@@ -87,6 +87,31 @@ git ls-files --stage
 git rm -r --cached FolderName
 cat .gitmodules => check/list submodules
 
+git status --ignore-submodules
+get rid of Git submodules untracked status?
+____________________________________________________________
+
+Actual way to have a clean status would be to go into each one of those submodules and:
+add and commit the untracked contents,
+or reference the untracked contents in a .gitignore specific to each module. 
+By adding the ignore = dirty option to each one of the entries in the .gitmodules file
+ remove the untracked files from all submodules using a .gitignore
+
+
+
+Head into the submodule's directory and make sure there isn't anything being built (an output of some kind) w/o you knowing.
+
+cd submoduledir/
+git status
+
+If you see any untracked files in here, just do this to remove them:
+
+git reset --hard HEAD
+git clean -fxd
+
+
+
+
 Git submodule Cheat Sheet
 ==============================
 
