@@ -27,3 +27,6 @@
 	path = bundle/ultisnips
 	url = https://github.com/sirver/ultisnips
     ignore = dirty
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
