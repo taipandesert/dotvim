@@ -23,10 +23,6 @@
 	path = bundle/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes
     ignore = dirty
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/sirver/ultisnips
-    ignore = dirty
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
