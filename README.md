@@ -109,6 +109,9 @@ If you see any untracked files in here, just do this to remove them:
 git reset --hard HEAD
 git clean -fxd
 
+Error 'fatal: no submodule mapping found in .gitmodules for path'
+How git manages submodules
+
 
 
 
@@ -129,4 +132,8 @@ Update a specific submodule to the latest version (explicit method):
   git add bundle/vim-sensible
   git commit -m "update vim-sensible"
 
+List submodules
+
+git submodule status
+git submodule foreach
 
